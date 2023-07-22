@@ -33,7 +33,7 @@ for filename in os.listdir(docs_folder):
     pages = loader.load_and_split()
 
     prompt_template = """
-    You're an analyst reviewing a document. You have 3 tasks:
+    You're an analyst reviewing a document. You have 5 tasks:
     Task 1: Generate Document Summary. When writing the summary you prefer completeness over conciseness and include specific terminology used in the document.
     Task 2: Include all sentences that include Microsoft, OpenAI, Amazon, AWS, Google and/or GCP. You will include the exact sentence mentioning these companies in the document summary.
     Task 3: Detect Investments and releases in Technology, Data Centers, or Cloud and include them in the document summary.
